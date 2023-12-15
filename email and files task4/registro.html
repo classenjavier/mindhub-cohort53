@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+</head>
+
+<body>
+
+    <h1>Registro</h1>
+
+    <form action="./show_data.html" method="get">
+
+        <div>
+            <label for="first_name">Nombre del jugador:</label>
+            <input type="text" id= "first_name" name="first_name">
+            <label for="last_name">Apellido:</label>
+            <input type="text" id="last_name" name="last_name>
+        </div><br>
+        <div>
+            <label for="address">Dirección:</label>
+            <input type="text" name="address">
+
+            <label for="city">Ciudad:</label>
+            <input type="text" name="city">
+
+            <label for="zip">Código postal:</label>
+            <input type="text" name="zip">
+        </div><br>
+        <div>
+            <label for="dob">Fecha de nacimiento:</label>
+            <input type="date" name="dob">
+        </div><br>
+        <div>
+            <label for="tutor">Tutor:</label>
+            <input type="text" name="tutor">
+        </div><br>
+        <div>
+            <label for="school">Escuela:</label>
+            <select name="school">
+                <option value="Colegio Santa María">Colegio Santa María</option>
+                <option value="Colegio San José">Colegio San José</option>
+                <option value="Colegio San Pablo">Colegio San Pablo</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="sexo" value="Masculino"> Masculino
+            <input type="radio" name="sexo" value="Femenino"> Femenino
+        </div><br>
+        <div>
+            <label for="deportes">Deportes:</label>
+            <input type="checkbox" name="deportes[]" value="Fútbol"> Hockey
+            <input type="checkbox" name="deportes[]" value="Baloncesto"> Basquet
+            <input type="checkbox" name="deportes[]" value="Béisbol"> Rugby
+            <input type="checkbox" name="deportes[]" value="Tenis"> Futbol
+        </div><br>
+        <div>
+            <label for="medico">Alergias o condiciones médicas:</label>
+            <input type="text" name="medico">
+        </div><br>
+        <div>
+            <label for="permisos">Permisos:</label>
+            <input type="radio" name="permisos" value="Si"> Sí, acepto los términos y condiciones
+            <input type="radio" name="permisos" value="No"> No, no acepto los términos y condiciones
+        </div><br>
+        <div>
+            <label for="firma">Firma del padre/tutor:</label>
+            <input type="text" name="firma">
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha">
+
+        </div><br>
+
+        <section>
+            <h2>Ubicación del juego</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13144.912839909126!2d-58.4515826!3d-34.547776850000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1702605289121!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </section>
+
+
+        <div id="mapa"></div>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+
+</html>
